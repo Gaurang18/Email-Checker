@@ -1,11 +1,10 @@
-
+import sys
 import datetime
 import email
 import imaplib
 import mailbox
 
 # mail = imaplib.IMAP4_SSL('imap.gmail.com')
-# mail.login('gaurangbansal18@gmail.com', 'madanmohan1')
 # mail.list()
 # mail.select('inbox')
 
@@ -47,8 +46,8 @@ import mailbox
 
 
 
-EMAIL_ACCOUNT = "gaurangbansal18@gmail.com"
-PASSWORD = "madanmohan1"
+EMAIL_ACCOUNT = input("Enter Your gmail email ID as 'abc@gmail.com:     ");
+PASSWORD = input("Enter the password    ");
 
 mail = imaplib.IMAP4_SSL('imap.gmail.com')
 mail.login(EMAIL_ACCOUNT, PASSWORD)
